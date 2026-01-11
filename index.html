@@ -510,8 +510,8 @@
 
 </style>
 
-  <script>
-    (function stickyBar(){
+ <script>
+(function stickyBar(){
   const bar = document.getElementById("stickyBar");
   const close = document.getElementById("stickyClose");
   if (!bar || !close) return;
@@ -522,21 +522,42 @@
   })();
   if (closed) return;
 
-  function onScroll(){
+  let lastState = false;
+  let ticking = false;
+
+  function updateBar(){
     const y = window.scrollY || 0;
-    if (y > 900) bar.classList.add("on");
-    else bar.classList.remove("on");
+    const shouldShow = y > 900;
+
+    if (shouldShow !== lastState) {
+      if (shouldShow) {
+        bar.classList.add("on");
+      } else {
+        bar.classList.remove("on");
+      }
+      lastState = shouldShow;
+    }
+
+    ticking = false;
   }
+
+  function onScroll(){
+    if (!ticking) {
+      window.requestAnimationFrame(updateBar);
+      ticking = true;
+    }
+  }
+
   window.addEventListener("scroll", onScroll, { passive: true });
-  onScroll();
+  updateBar();
 
   close.addEventListener("click", () => {
     bar.classList.remove("on");
     try { localStorage.setItem(key, "1"); } catch {}
   });
 })();
+</script>
 
-  </script>
 </body>
 </html>
 
