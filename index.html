@@ -3,38 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pink Heaven Beauty - Salon Piękna Warszawa</title>
-
-  
-  <meta name="description" content="Pink Heaven to salon beauty w Warszawie. Paznokcie hybrydowe, rzęsy 1:1 i volume, makijaż oraz zabiegi pielęgnacyjne.">
-  <meta name="keywords" content="salon beauty, paznokcie, rzęsy, makijaż, glow, Warszawa">
-  <meta name="author" content="Kontaktio">
-  <meta property="og:title" content="Pink Heaven Beauty - Salon Piękna Warszawa">
-  <meta property="og:description" content="Salon beauty w Warszawie. Paznokcie, rzęsy, makijaż i zabiegi pielęgnacyjne.">
+  <title>Salon Urody Róza - Profesjonalny Salon Beauty Warszawa</title>
+  <meta name="description" content="Salon Urody Róza w Warszawie. Manicure hybrydowy, stylizacja rzęs i brwi, makijaz okolicznosciowy i zabiegi na twarz. Umow wizytę juz dzis.">
+  <meta name="keywords" content="salon urody, salon beauty, manicure hybrydowy, pedicure, stylizacja rzęs, brwi, makijaz, zabiegi na twarz, Warszawa">
+  <meta name="author" content="Salon Urody Róza">
+  <meta property="og:title" content="Salon Urody Róza - Profesjonalny Salon Beauty Warszawa">
+  <meta property="og:description" content="Manicure hybrydowy, stylizacja rzęs i brwi, makijaz i zabiegi pielegnacyjne w samym sercu Warszawy.">
   <meta property="og:type" content="website">
-
-  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400;1,800&display=swap" rel="stylesheet">
-
-  
   <link rel="stylesheet" href="styles.css">
-
-  
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💗</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌹</text></svg>">
 </head>
 <body>
 
-
 <div id="preloader">
-  <div class="loader-heart"></div>
-  <span>Pink Heaven&hellip;</span>
+  <div class="loader-petal"></div>
+  <span>Salon Urody Róza&hellip;</span>
 </div>
 
-
 <header class="navbar" id="navbar">
-  <div class="logo"><span>Pink</span><strong>Heaven</strong></div>
+  <div class="logo"><span>Salon Urody</span><strong>Róza</strong></div>
 
   <nav class="nav-links">
     <a href="#about">O nas</a>
@@ -51,7 +41,6 @@
   </button>
 </header>
 
-
 <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
   <a href="#about"        onclick="closeMobile()">O nas</a>
   <a href="#services"     onclick="closeMobile()">Usługi</a>
@@ -62,30 +51,32 @@
   <a href="#contact" class="btn btn-primary" onclick="closeMobile()">Umów wizytę</a>
 </nav>
 
-
 <section id="hero" class="hero">
-  <div class="hero-bg"></div>
-
-  <div class="hero-deco" aria-hidden="true">
-    <span>💅</span><span>✨</span><span>💗</span><span>🌸</span>
-    <span>💋</span><span>✨</span><span>💗</span><span>🌸</span>
+  <div class="hero-bg" id="heroBg">
+    <img
+      src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1600&q=80"
+      alt="Wnetrze Salonu Urody Róza - eleganckie i przytulne miejsce"
+      class="hero-img"
+      loading="eager"
+    >
+    <div class="hero-overlay"></div>
   </div>
 
   <div class="hero-content">
     <div class="hero-badge">
       <span class="dot"></span>
-      Salon beauty w Warszawie
+      Salon urody w Warszawie
     </div>
 
-    <h1>Twoje Piękno<br>Zasługuje na<br><em>Więcej</em></h1>
+    <h1>Odkryj swoja<br>naturalna<br><em>pieknosc</em></h1>
 
     <p class="hero-sub">
-      Zadbamy o Ciebie z dbałością o każdy detal. Rzęsy, paznokcie, makijaż i zabiegi pielęgnacyjne - wszystko w jednym miejscu.
+      Zadbamy o Ciebie z dbałoscią o kazdy detal. Manicure, rzesy, brwi, makijaz i zabiegi pielegnacyjne - wszystko w jednym, pieknym miejscu.
     </p>
 
     <div class="hero-actions">
-      <a href="#contact" class="btn btn-white">💗 Umów wizytę</a>
-      <a href="#services" class="btn btn-outline">Poznaj usługi</a>
+      <a href="#contact" class="btn btn-white">Umów wizytę</a>
+      <a href="#services" class="btn btn-outline">Nasze usługi</a>
     </div>
   </div>
 
@@ -96,15 +87,15 @@
     </div>
     <div class="stat-item">
       <span class="stat-num" data-target="8">0</span>
-      <span class="stat-label">Lat doświadczenia</span>
+      <span class="stat-label">Lat doswiadczenia</span>
     </div>
     <div class="stat-item">
       <span class="stat-num" data-target="18">0</span>
-      <span class="stat-label">Usług premium</span>
+      <span class="stat-label">Uslug premium</span>
     </div>
     <div class="stat-item">
       <span class="stat-num" data-target="4.9">0</span>
-      <span class="stat-label">Średnia ocena ⭐</span>
+      <span class="stat-label">Srednia ocena</span>
     </div>
   </div>
 
@@ -115,41 +106,44 @@
   </div>
 </section>
 
-
 <section id="about" class="section about">
   <div class="about-grid container">
     <div class="about-text reveal">
       <span class="section-label">O nas</span>
-      <h2 class="section-title">Dbamy o każdy <span>detal</span></h2>
+      <h2 class="section-title">Pielegnujemy z <span>pasja</span></h2>
       <p class="section-sub" style="margin-bottom:32px">
-        Pink Heaven to miejsce, gdzie estetyka spotyka profesjonalizm. Każdy zabieg wykonujemy z najwyższą starannością, stosując wyłącznie sprawdzone produkty i techniki. Działamy od 2016 roku.
+        Salon Urody Róza to miejsce stworzone dla kobiet, które cenią siebie. Od 2016 roku pomagamy naszym klientkom poczuc sie pieknie, zrelaksowanie i pewnie. Kazdy zabieg traktujemy indywidualnie - z uwaga i dbałoscią o kazdy detal.
       </p>
 
       <div class="about-features">
         <div class="about-feature-item">
-          <span class="ico">💅</span>
-          <div><strong>Topowe stylistki</strong><span>Certyfikowane, z pasją do perfekcji</span></div>
+          <span class="ico">��</span>
+          <div><strong>Doswiadczone specjalistki</strong><span>Certyfikowane, z pasja do piekna</span></div>
         </div>
         <div class="about-feature-item">
           <span class="ico">✨</span>
-          <div><strong>Produkty premium</strong><span>Tylko najwyżej oceniane marki</span></div>
+          <div><strong>Produkty premium</strong><span>Tylko najwyzej oceniane marki</span></div>
         </div>
         <div class="about-feature-item">
-          <span class="ico">📸</span>
-          <div><strong>Widoczne efekty</strong><span>Efekty, z których jesteś dumna</span></div>
+          <span class="ico">🕊️</span>
+          <div><strong>Spokoj i relaks</strong><span>Atmosfera jak w prywatnym spa</span></div>
         </div>
         <div class="about-feature-item">
-          <span class="ico">🌸</span>
-          <div><strong>Komfort i relaks</strong><span>Miła atmosfera i indywidualne podejście</span></div>
+          <span class="ico">💛</span>
+          <div><strong>Indywidualne podejscie</strong><span>Sluchamy i doradzamy z sercem</span></div>
         </div>
       </div>
     </div>
 
     <div class="about-visual reveal reveal-delay-2">
-      <div class="about-card about-card-1"></div>
-      <div class="about-card about-card-2"></div>
+      <img
+        src="https://images.unsplash.com/photo-1487412947147-5cebf100d293?w=700&q=80"
+        alt="Wnętrze Salonu Urody Róza - eleganckie i nowoczesne"
+        class="about-photo"
+        loading="lazy"
+      >
       <div class="about-badge">
-        <span class="big">★ 4.9</span>
+        <span class="big">4.9</span>
         <div>
           <strong>Ocena Google</strong>
           <small>1 200+ opinii klientek</small>
@@ -159,117 +153,171 @@
   </div>
 </section>
 
-
-
-
 <section id="services" class="section services">
   <div class="container text-center">
     <span class="section-label reveal">Nasze Usługi</span>
     <h2 class="section-title reveal">Co robimy <span>najlepiej?</span></h2>
-    <p class="section-sub reveal">Każdy zabieg wykonujemy z najwyższą starannością i przy użyciu sprawdzonych produktów.</p>
+    <p class="section-sub reveal">Kazdy zabieg wykonujemy z najwyzsza starannoscią i przy uzyciu sprawdzonych produktow.</p>
   </div>
 
   <div class="services-grid">
     <article class="service-card reveal">
-      <span class="service-icon">💅</span>
-      <h3>Paznokcie</h3>
-      <p>Manicure hybrydowy, żelowy i tytanowy. Zdobienia nail art, ombre i efekty 3D. Każdy projekt - unikalne dzieło.</p>
-      <span class="service-price">od 120 zł</span>
+      <div class="service-img-wrap">
+        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=500&q=80" alt="Manicure hybrydowy - Salon Urody Róza" loading="lazy">
+      </div>
+      <div class="service-body">
+        <h3>Manicure hybrydowy</h3>
+        <p>Trwaly, estetyczny i szybki. Manicure hybrydowy, zelowy i tytanowy - idealny na kazda okazje i w kazdym kolorze.</p>
+        <div class="service-footer">
+          <span class="service-price">od 120 zł</span>
+          <a href="#contact" class="btn-text">Zobacz szczegoly</a>
+        </div>
+      </div>
     </article>
 
-    <article class="service-card featured reveal reveal-delay-1">
-      <span class="service-icon">👁️</span>
-      <h3>Rzęsy</h3>
-      <p>Przedłużanie 1:1, 2-3D i mega volume. Lifting &amp; laminacja. Efekt, który zostaje na 4-6 tygodni.</p>
-      <span class="service-price">od 180 zł</span>
+    <article class="service-card reveal reveal-delay-1">
+      <div class="service-img-wrap">
+        <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=500&q=80" alt="Pedicure - Salon Urody Róza" loading="lazy">
+      </div>
+      <div class="service-body">
+        <h3>Pedicure</h3>
+        <p>Zadbane i piekne stopy przez caly rok. Pedicure klasyczny, hybrydowy i zdrowotny - dla prawdziwego komfortu.</p>
+        <div class="service-footer">
+          <span class="service-price">od 90 zł</span>
+          <a href="#contact" class="btn-text">Zobacz szczegoly</a>
+        </div>
+      </div>
     </article>
 
     <article class="service-card reveal reveal-delay-2">
-      <span class="service-icon">💄</span>
-      <h3>Makijaż</h3>
-      <p>Dzienny, wieczorowy, ślubny. Airbrush, smoky eye, glow - każdy styl na każdą okazję.</p>
-      <span class="service-price">od 200 zł</span>
+      <div class="service-img-wrap">
+        <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=500&q=80" alt="Stylizacja brwi - Salon Urody Róza" loading="lazy">
+      </div>
+      <div class="service-body">
+        <h3>Stylizacja brwi</h3>
+        <p>Regulacja, henna pudrowa, laminacja brwi. Idealne brwi definiuja twarz i wzmacniaja naturalne spojrzenie.</p>
+        <div class="service-footer">
+          <span class="service-price">od 80 zł</span>
+          <a href="#contact" class="btn-text">Zobacz szczegoly</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="service-card featured reveal reveal-delay-1">
+      <div class="service-img-wrap">
+        <img src="https://images.unsplash.com/photo-1583001931096-959e9a1a6223?w=500&q=80" alt="Stylizacja rzęs - Salon Urody Róza" loading="lazy">
+      </div>
+      <div class="service-body">
+        <h3>Stylizacja rzęs</h3>
+        <p>Przedluzanie 1:1, 2-3D i mega volume. Lifting i laminacja. Efekt, ktory zostaje na 4-6 tygodni.</p>
+        <div class="service-footer">
+          <span class="service-price">od 180 zł</span>
+          <a href="#contact" class="btn-text">Zobacz szczegoly</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="service-card reveal reveal-delay-2">
+      <div class="service-img-wrap">
+        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500&q=80" alt="Makijaz okolicznosciowy - Salon Urody Róza" loading="lazy">
+      </div>
+      <div class="service-body">
+        <h3>Makijaz okolicznosciowy</h3>
+        <p>Dzienny, wieczorowy, slubny. Smoky eye, glow, naturalne - kazdy styl dopasowany do Twojej osobowosci.</p>
+        <div class="service-footer">
+          <span class="service-price">od 200 zł</span>
+          <a href="#contact" class="btn-text">Zobacz szczegoly</a>
+        </div>
+      </div>
     </article>
 
     <article class="service-card reveal reveal-delay-3">
-      <span class="service-icon">✨</span>
-      <h3>Zabiegi Glow</h3>
-      <p>Oczyszczanie, mikrodermabrazja, lifting, masaże twarzy. Twoja skóra jak filtr Instagram - bez filtra.</p>
-      <span class="service-price">od 150 zł</span>
-    </article>
-
-    <article class="service-card reveal reveal-delay-4">
-      <span class="service-icon">🌿</span>
-      <h3>Brwi &amp; Henna</h3>
-      <p>Regulacja, henna pudrowa, microblading - idealne brwi definiują twarz i wzmacniają spojrzenie.</p>
-      <span class="service-price">od 80 zł</span>
-    </article>
-
-    <article class="service-card reveal reveal-delay-4">
-      <span class="service-icon">🧖‍♀️</span>
-      <h3>Depilacja</h3>
-      <p>Woskiem i cukrem, laserowa. Szybko, skutecznie, delikatnie. Dla całego ciała, przez cały rok.</p>
-      <span class="service-price">od 50 zł</span>
+      <div class="service-img-wrap">
+        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=500&q=80" alt="Zabiegi na twarz - Salon Urody Róza" loading="lazy">
+      </div>
+      <div class="service-body">
+        <h3>Zabiegi na twarz</h3>
+        <p>Oczyszczanie, mikrodermabrazja, lifting, masaze twarzy. Skora promienna, odswiezona i pełna blasku.</p>
+        <div class="service-footer">
+          <span class="service-price">od 150 zł</span>
+          <a href="#contact" class="btn-text">Zobacz szczegoly</a>
+        </div>
+      </div>
     </article>
   </div>
 </section>
-
 
 <section class="section how-it-works">
   <div class="container text-center">
     <span class="section-label reveal">Jak to działa?</span>
     <h2 class="section-title reveal">Twoja wizyta w <span>4 krokach</span></h2>
-    <p class="section-sub reveal">Umów się telefonicznie, przez formularz lub odwiedź nas osobiście.</p>
+    <p class="section-sub reveal">Umów sie telefonicznie, przez formularz lub odwiedz nas osobiscie.</p>
   </div>
 
   <div class="steps-grid">
     <div class="step-item reveal">
       <div class="step-num">1</div>
-      <h3>Skontaktuj się z nami</h3>
-      <p>Zadzwoń, napisz lub wypełnij formularz kontaktowy - odpowiemy tak szybko, jak to możliwe.</p>
+      <h3>Skontaktuj sie z nami</h3>
+      <p>Zadzwon, napisz lub wypelnij formularz kontaktowy - odpowiemy tak szybko, jak to mozliwe.</p>
     </div>
     <div class="step-item reveal reveal-delay-1">
       <div class="step-num">2</div>
-      <h3>Wybierz usługę i termin</h3>
-      <p>Razem dobierzemy zabieg dopasowany do Twoich potrzeb i znajdziemy pasujący termin.</p>
+      <h3>Wybierz usluge i termin</h3>
+      <p>Razem dobierzemy zabieg dopasowany do Twoich potrzeb i znajdziemy pasujacy termin.</p>
     </div>
     <div class="step-item reveal reveal-delay-2">
       <div class="step-num">3</div>
-      <h3>Odwiedź salon</h3>
-      <p>Zapraszamy do naszego salonu w Warszawie. Zadbamy o Twój komfort od pierwszej chwili.</p>
+      <h3>Odwiedz salon</h3>
+      <p>Zapraszamy do naszego salonu w Warszawie. Zadbamy o Twoj komfort od pierwszej chwili.</p>
     </div>
     <div class="step-item reveal reveal-delay-3">
       <div class="step-num">4</div>
-      <h3>Ciesz się efektem</h3>
-      <p>Wychodź z poczuciem, że wyglądasz i czujesz się doskonale. Czekamy na Twój powrót.</p>
+      <h3>Ciesz sie efektem</h3>
+      <p>Wychodz z poczuciem, ze wygladasz i czujesz sie doskonale. Czekamy na Twoj powrot.</p>
     </div>
   </div>
 </section>
-
 
 <section id="gallery" class="section gallery">
   <div class="container text-center">
     <span class="section-label reveal">Galeria</span>
-    <h2 class="section-title reveal">Nasze <span>Efekty</span></h2>
-    <p class="section-sub reveal">Zdjęcia mówią więcej niż słowa. Zobacz, co tworzymy każdego dnia.</p>
+    <h2 class="section-title reveal">Nasze <span>realizacje</span></h2>
+    <p class="section-sub reveal">Zdjecia mowia wiecej niz slowa. Zobacz, co tworzymy kazdego dnia.</p>
   </div>
 
   <div class="gallery-grid">
-    <div class="gallery-item reveal" style="min-height:220px"><span class="gallery-label">Manicure Hybrydowy</span></div>
-    <div class="gallery-item tall reveal reveal-delay-1"><span class="gallery-label">Rzęsy Volume</span></div>
-    <div class="gallery-item reveal reveal-delay-2" style="min-height:220px"><span class="gallery-label">Zdobienia Nail Art</span></div>
-    <div class="gallery-item wide reveal reveal-delay-2" style="min-height:220px"><span class="gallery-label">Makijaż Ślubny</span></div>
-    <div class="gallery-item reveal reveal-delay-3" style="min-height:220px"><span class="gallery-label">Zabiegi Glow</span></div>
-    <div class="gallery-item reveal reveal-delay-4" style="min-height:220px"><span class="gallery-label">Brwi &amp; Henna</span></div>
+    <div class="gallery-item reveal">
+      <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80" alt="Manicure hybrydowy - Salon Urody Róza" loading="lazy">
+      <span class="gallery-label">Manicure hybrydowy</span>
+    </div>
+    <div class="gallery-item tall reveal reveal-delay-1">
+      <img src="https://images.unsplash.com/photo-1583001931096-959e9a1a6223?w=600&q=80" alt="Stylizacja rzęs - Salon Urody Róza" loading="lazy">
+      <span class="gallery-label">Stylizacja rzęs</span>
+    </div>
+    <div class="gallery-item reveal reveal-delay-2">
+      <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&q=80" alt="Stylizacja brwi - Salon Urody Róza" loading="lazy">
+      <span class="gallery-label">Stylizacja brwi</span>
+    </div>
+    <div class="gallery-item wide reveal reveal-delay-2">
+      <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=900&q=80" alt="Makijaz slubny - Salon Urody Róza" loading="lazy">
+      <span class="gallery-label">Makijaz slubny</span>
+    </div>
+    <div class="gallery-item reveal reveal-delay-3">
+      <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80" alt="Zabiegi na twarz - Salon Urody Róza" loading="lazy">
+      <span class="gallery-label">Zabiegi na twarz</span>
+    </div>
+    <div class="gallery-item reveal reveal-delay-4">
+      <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=600&q=80" alt="Pedicure - Salon Urody Róza" loading="lazy">
+      <span class="gallery-label">Pedicure</span>
+    </div>
   </div>
 </section>
-
 
 <section id="testimonials" class="section testimonials">
   <div class="container text-center">
     <span class="section-label reveal">Opinie</span>
-    <h2 class="section-title reveal">Co mówią nasze <span>klientki?</span></h2>
-    <p class="section-sub reveal">Ponad 1 200 opinii na Google. Dla nas liczy się każda klientka i każdy efekt.</p>
+    <h2 class="section-title reveal">Co mowia nasze <span>klientki?</span></h2>
+    <p class="section-sub reveal">Ponad 1 200 opinii na Google. Dla nas liczy sie kazda klientka i kazdy efekt.</p>
   </div>
 
   <div class="testimonials-inner reveal">
@@ -278,9 +326,9 @@
 
         <div class="testimonial-card">
           <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">„Rewelacyjny salon! Rzęsy trzymają się już 6 tygodni i wyglądają jak pierwszego dnia. Obsługa na najwyższym poziomie, wracam regularnie!"</p>
+          <p class="testimonial-text">„Niesamowity salon! Rzesy trzymaja sie juz 6 tygodni i wyglądają jak pierwszego dnia. Obsluga na najwyzszym poziomie, wracam regularnie!"</p>
           <div class="testimonial-author">
-            <div class="author-avatar a1">👩</div>
+            <img src="https://i.pravatar.cc/52?img=1" alt="Kasia W." class="author-avatar" loading="lazy">
             <div class="author-info">
               <strong>Kasia W.</strong>
               <span>Klientka od 3 lat</span>
@@ -290,9 +338,9 @@
 
         <div class="testimonial-card">
           <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">„Paznokcie przepiękne, obsługa cudowna, miła atmosfera. Wracam na pewno i zabieram ze sobą koleżanki! 🌸"</p>
+          <p class="testimonial-text">„Paznokcie przepiekne, obsluga cudowna, mila atmosfera. Wracam na pewno i zabieram ze soba koleżanki!"</p>
           <div class="testimonial-author">
-            <div class="author-avatar a2">👩‍🦰</div>
+            <img src="https://i.pravatar.cc/52?img=5" alt="Natalia K." class="author-avatar" loading="lazy">
             <div class="author-info">
               <strong>Natalia K.</strong>
               <span>Klientka od 2 lat</span>
@@ -302,21 +350,21 @@
 
         <div class="testimonial-card">
           <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">„Efekty mówią same za siebie 💗 Zdjęcia paznokci zebrały mnóstwo komplementów! Ale najważniejsze - jakość wykonania jest po prostu rewelacyjna."</p>
+          <p class="testimonial-text">„Efekty mowia same za siebie. Zdjecia paznokci zebraly mnóstwo komplementow! Jakosc wykonania jest po prostu niesamowita."</p>
           <div class="testimonial-author">
-            <div class="author-avatar a3">👩‍🦱</div>
+            <img src="https://i.pravatar.cc/52?img=9" alt="Ola M." class="author-avatar" loading="lazy">
             <div class="author-info">
               <strong>Ola M.</strong>
-              <span>Influencerka &amp; stała klientka</span>
+              <span>Stala klientka</span>
             </div>
           </div>
         </div>
 
         <div class="testimonial-card">
           <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">„Zabieg glow face to mistrzostwo! Skóra jak u 18-latki, a mam lat 35 😂 Zero bólu, maksimum efektu. Przypomnienie SMS dzień wcześniej - profesjonalizm na 5+."</p>
+          <p class="testimonial-text">„Zabieg na twarz to mistrzostwo! Skora swietlista i odswiezona jak nigdy. Zero bolu, maksimum efektu. Profesjonalizm na piatke."</p>
           <div class="testimonial-author">
-            <div class="author-avatar a4">👩‍🦳</div>
+            <img src="https://i.pravatar.cc/52?img=20" alt="Agnieszka B." class="author-avatar" loading="lazy">
             <div class="author-info">
               <strong>Agnieszka B.</strong>
               <span>Klientka od roku</span>
@@ -336,37 +384,88 @@
 
     <div class="slider-nav">
       <button class="slider-btn" id="sliderPrev" aria-label="Poprzednia">&#8592;</button>
-      <button class="slider-btn" id="sliderNext" aria-label="Następna">&#8594;</button>
+      <button class="slider-btn" id="sliderNext" aria-label="Nastepna">&#8594;</button>
     </div>
   </div>
 </section>
 
+<section id="pricing" class="section pricing">
+  <div class="container text-center">
+    <span class="section-label reveal">Cennik</span>
+    <h2 class="section-title reveal">Przejrzysty <span>cennik</span></h2>
+    <p class="section-sub reveal">Zadnych ukrytych kosztow. Ceny orientacyjne - dokladna wycene ustalamy indywidualnie.</p>
+  </div>
+
+  <div class="pricing-grid">
+    <div class="pricing-card reveal">
+      <h3>Dlonie</h3>
+      <div class="pricing-rows">
+        <div class="pricing-row"><span>Manicure hybrydowy</span><span>od 120 zł</span></div>
+        <div class="pricing-row"><span>Manicure zelowy</span><span>od 150 zł</span></div>
+        <div class="pricing-row"><span>Manicure tytanowy</span><span>od 180 zł</span></div>
+        <div class="pricing-row"><span>Zdobienia nail art</span><span>od 20 zł</span></div>
+        <div class="pricing-row"><span>Uzupelnienie hybrydy</span><span>od 100 zł</span></div>
+      </div>
+    </div>
+
+    <div class="pricing-card reveal reveal-delay-1">
+      <h3>Stopy</h3>
+      <div class="pricing-rows">
+        <div class="pricing-row"><span>Pedicure klasyczny</span><span>od 90 zł</span></div>
+        <div class="pricing-row"><span>Pedicure hybrydowy</span><span>od 120 zł</span></div>
+        <div class="pricing-row"><span>Pedicure zdrowotny</span><span>od 130 zł</span></div>
+      </div>
+    </div>
+
+    <div class="pricing-card reveal reveal-delay-2">
+      <h3>Rzesy i brwi</h3>
+      <div class="pricing-rows">
+        <div class="pricing-row"><span>Rzesy 1:1 classic</span><span>od 180 zł</span></div>
+        <div class="pricing-row"><span>Rzesy 2-3D volume</span><span>od 220 zł</span></div>
+        <div class="pricing-row"><span>Lifting rzęs</span><span>od 130 zł</span></div>
+        <div class="pricing-row"><span>Laminacja brwi</span><span>od 100 zł</span></div>
+        <div class="pricing-row"><span>Henna pudrowa</span><span>od 80 zł</span></div>
+      </div>
+    </div>
+
+    <div class="pricing-card reveal reveal-delay-3">
+      <h3>Makijaz i twarz</h3>
+      <div class="pricing-rows">
+        <div class="pricing-row"><span>Makijaz okolicznosciowy</span><span>od 200 zł</span></div>
+        <div class="pricing-row"><span>Makijaz slubny</span><span>od 350 zł</span></div>
+        <div class="pricing-row"><span>Oczyszczanie twarzy</span><span>od 150 zł</span></div>
+        <div class="pricing-row"><span>Mikrodermabrazja</span><span>od 180 zł</span></div>
+        <div class="pricing-row"><span>Lifting twarzy</span><span>od 220 zł</span></div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="faq" class="section faq">
   <div class="container text-center">
     <span class="section-label reveal">FAQ</span>
     <h2 class="section-title reveal">Masz <span>pytania?</span></h2>
-    <p class="section-sub reveal">Zebraliśmy najczęściej zadawane pytania. W razie wątpliwości zapraszamy do kontaktu.</p>
+    <p class="section-sub reveal">Zebralismy najczesciej zadawane pytania. W razie watpliwosci zapraszamy do kontaktu.</p>
   </div>
 
   <div class="faq-list">
     <div class="faq-item reveal">
       <button class="faq-question" aria-expanded="false">
-        Jak umówić wizytę?
+        Jak umowic wizyte?
         <span class="faq-arrow">▼</span>
       </button>
       <div class="faq-answer">
-        <p>Wizytę możesz umówić telefonicznie, przez e-mail lub wypełniając formularz kontaktowy na stronie. Odezwiemy się tak szybko, jak to możliwe, aby potwierdzić termin.</p>
+        <p>Wizyte mozesz umowic telefonicznie, przez e-mail lub wypelniajac formularz kontaktowy na stronie. Odezwiemy sie tak szybko, jak to mozliwe, aby potwierdzic termin.</p>
       </div>
     </div>
 
     <div class="faq-item reveal reveal-delay-1">
       <button class="faq-question" aria-expanded="false">
-        Jak długo trzymają się rzęsy?
+        Jak dlugo trzymaja sie rzesy?
         <span class="faq-arrow">▼</span>
       </button>
       <div class="faq-answer">
-        <p>Przy dobrym pielęgnowaniu rzęsy trzymają się 4-6 tygodni. Zalecamy uzupełnienie po 3-4 tygodniach, aby efekt był zawsze perfekcyjny.</p>
+        <p>Przy dobrym pielegnowaniu rzesy trzymaja sie 4-6 tygodni. Zalecamy uzupelnienie po 3-4 tygodniach, aby efekt byl zawsze perfekcyjny.</p>
       </div>
     </div>
 
@@ -376,17 +475,17 @@
         <span class="faq-arrow">▼</span>
       </button>
       <div class="faq-answer">
-        <p>Manicure hybrydowy zaczyna się od 120 zł. Zdobienia, wzorki i efekty specjalne są wyceniane indywidualnie. W razie pytań zapraszamy do kontaktu.</p>
+        <p>Manicure hybrydowy zaczyna sie od 120 zł. Zdobienia, wzorki i efekty specjalne sa wyceniane indywidualnie. W razie pytan zapraszamy do kontaktu.</p>
       </div>
     </div>
 
     <div class="faq-item reveal reveal-delay-3">
       <button class="faq-question" aria-expanded="false">
-        Czy mogę odwołać lub przełożyć wizytę?
+        Czy moge odwolac lub przelozyc wizyte?
         <span class="faq-arrow">▼</span>
       </button>
       <div class="faq-answer">
-        <p>Oczywiście! Wizytę możesz odwołać lub przełożyć do 24 godzin przed terminem. Napisz do nas lub zadzwoń - zawsze znajdziemy rozwiązanie.</p>
+        <p>Oczywiscie! Wizyte mozesz odwolac lub przelozyc do 24 godzin przed terminem. Napisz do nas lub zadzwon - zawsze znajdziemy rozwiazanie.</p>
       </div>
     </div>
 
@@ -396,87 +495,98 @@
         <span class="faq-arrow">▼</span>
       </button>
       <div class="faq-answer">
-        <p>Pracujemy wyłącznie z produktami premium: Kodi Professional, NeoNail, Lash Lift &amp; Tint, Dermalogica i innych certyfikowanych marek. Bezpieczeństwo i jakość to nasz priorytet - bez kompromisów.</p>
+        <p>Pracujemy wylacznie z produktami premium: Kodi Professional, NeoNail, Lash Lift &amp; Tint, Dermalogica i innych certyfikowanych marek. Bezpieczenstwo i jakosc to nasz priorytet.</p>
       </div>
     </div>
 
     <div class="faq-item reveal reveal-delay-4">
       <button class="faq-question" aria-expanded="false">
-        Czy oferujecie zabiegi dla par lub grup?
+        Czy oferujecie zabiegi dla grup?
         <span class="faq-arrow">▼</span>
       </button>
       <div class="faq-answer">
-        <p>Tak! Oferujemy pakiety dla par, wieczory panieńskie i grupowe eventy beauty. Skontaktuj się z nami przez formularz lub telefonicznie - przygotujemy ofertę dopasowaną do Twoich potrzeb.</p>
+        <p>Tak! Oferujemy pakiety dla par, wieczory panienskie i grupowe eventy beauty. Skontaktuj sie z nami przez formularz lub telefonicznie - przygotujemy oferte dopasowana do Twoich potrzeb.</p>
       </div>
     </div>
   </div>
 </section>
 
-
 <section class="cta-band">
-  <h2>Zadbaj o siebie <em>już dziś</em></h2>
-  <p>Zarezerwuj termin i oddaj się w ręce naszych specjalistek. Czekamy na Ciebie.</p>
+  <h2>Zadbaj o siebie <em>juz dzis</em></h2>
+  <p>Zarezerwuj termin i oddaj sie w rece naszych specjalistek. Czekamy na Ciebie w Salonie Urody Róza.</p>
   <div class="cta-actions">
-    <a href="#contact" class="btn btn-white">💗 Umów wizytę online</a>
-    <a href="tel:+48000000000" class="btn btn-outline">📞 Zadzwoń do nas</a>
+    <a href="#contact" class="btn btn-white">Umów wizyte online</a>
+    <a href="tel:+48000000000" class="btn btn-outline">Zadzwon do nas</a>
   </div>
 </section>
-
 
 <section id="contact" class="section contact">
   <div class="contact-grid container">
     <div class="contact-info reveal">
       <span class="section-label">Kontakt</span>
-      <h2>Odwiedź nas<br>lub napisz!</h2>
+      <h2>Odwiedz nas<br>lub napisz!</h2>
 
       <div style="margin-top:28px">
         <div class="contact-detail">
           <div class="ico-wrap">📍</div>
           <div>
             <strong>Adres</strong>
-            <p>ul. Różana 12, 00-001 Warszawa<br>(Śródmieście, obok metra Centrum)</p>
+            <p>ul. Rózana 12, 00-001 Warszawa<br>(Srodmiescie, obok metra Centrum)</p>
           </div>
         </div>
         <div class="contact-detail">
           <div class="ico-wrap">📞</div>
           <div>
             <strong>Telefon</strong>
-            <p><a href="tel:+48000000000" style="color:var(--pink-4);font-weight:600">+48 000 000 000</a></p>
+            <p><a href="tel:+48000000000" style="color:var(--gold);font-weight:600">+48 000 000 000</a></p>
           </div>
         </div>
         <div class="contact-detail">
           <div class="ico-wrap">📧</div>
           <div>
             <strong>E-mail</strong>
-            <p><a href="mailto:hello@pinkheaven.pl" style="color:var(--pink-4);font-weight:600">hello@pinkheaven.pl</a></p>
+            <p><a href="mailto:hello@salonurodyroza.pl" style="color:var(--gold);font-weight:600">hello@salonurodyroza.pl</a></p>
           </div>
         </div>
         <div class="contact-detail">
           <div class="ico-wrap">📱</div>
           <div>
             <strong>Instagram</strong>
-            <p><a href="#" style="color:var(--pink-4);font-weight:600">@pinkheaven.beauty</a></p>
+            <p><a href="#" style="color:var(--gold);font-weight:600">@salonurodyroza</a></p>
           </div>
         </div>
       </div>
 
       <div class="opening-hours">
-        <h4>🕐 Godziny otwarcia</h4>
-        <div class="hours-row"><strong>Pon-Pt</strong><span class="open">09:00-20:00 ✓</span></div>
-        <div class="hours-row"><strong>Sobota</strong><span class="open">10:00-18:00 ✓</span></div>
-        <div class="hours-row"><strong>Niedziela</strong><span class="closed">Zamknięte</span></div>
+        <h4>Godziny otwarcia</h4>
+        <div class="hours-row"><strong>Pon-Pt</strong><span class="open">09:00-20:00</span></div>
+        <div class="hours-row"><strong>Sobota</strong><span class="open">10:00-18:00</span></div>
+        <div class="hours-row"><strong>Niedziela</strong><span class="closed">Zamkniete</span></div>
+      </div>
+
+      <div class="map-wrap">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d78199.37946815754!2d21.012228!3d52.229676!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471eccb9f52b9a57%3A0xf7c09c21d5eaa0ca!2sWarsaw%2C%20Poland!5e0!3m2!1sen!2spl!4v1711638000000!5m2!1sen!2spl"
+          width="100%"
+          height="220"
+          style="border:0;border-radius:16px;margin-top:24px"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Lokalizacja Salonu Urody Róza - Warszawa Srodmiescie"
+        ></iframe>
       </div>
     </div>
 
     <div class="contact-form reveal reveal-delay-2">
       <span class="section-label">Formularz</span>
-      <h3 style="font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--text);margin-bottom:28px">Wyślij zapytanie</h3>
+      <h3 style="font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--brown);margin-bottom:28px">Umów wizyte</h3>
 
       <form id="contactForm" novalidate>
         <div class="form-row">
           <div class="form-group">
-            <label for="fname">Imię</label>
-            <input type="text" id="fname" name="fname" placeholder="Twoje imię" required autocomplete="given-name">
+            <label for="fname">Imie</label>
+            <input type="text" id="fname" name="fname" placeholder="Twoje imie" required autocomplete="given-name">
           </div>
           <div class="form-group">
             <label for="phone">Telefon</label>
@@ -490,44 +600,42 @@
         </div>
 
         <div class="form-group">
-          <label for="service">Usługa</label>
+          <label for="service">Usluga</label>
           <select id="service" name="service">
-            <option value="">- Wybierz usługę -</option>
+            <option value="">- Wybierz usluge -</option>
             <option>Manicure hybrydowy</option>
-            <option>Manicure żelowy / tytanowy</option>
-            <option>Przedłużanie rzęs 1:1</option>
-            <option>Przedłużanie rzęs 2-3D Volume</option>
-            <option>Lifting &amp; laminacja rzęs</option>
-            <option>Makijaż okolicznościowy</option>
-            <option>Makijaż ślubny</option>
-            <option>Zabiegi glow</option>
-            <option>Brwi &amp; henna</option>
-            <option>Depilacja</option>
+            <option>Manicure zelowy / tytanowy</option>
+            <option>Pedicure</option>
+            <option>Stylizacja rzęs 1:1</option>
+            <option>Stylizacja rzęs 2-3D Volume</option>
+            <option>Lifting rzęs</option>
+            <option>Stylizacja brwi</option>
+            <option>Laminacja brwi</option>
+            <option>Makijaz okolicznosciowy</option>
+            <option>Makijaz slubny</option>
+            <option>Zabiegi na twarz</option>
             <option>Inna / zapytanie</option>
           </select>
         </div>
 
         <div class="form-group">
-          <label for="message">Wiadomość</label>
-          <textarea id="message" name="message" placeholder="Preferowany termin, pytania, uwagi…"></textarea>
+          <label for="message">Preferowany termin i uwagi</label>
+          <textarea id="message" name="message" placeholder="Preferowany termin, pytania, uwagi..."></textarea>
         </div>
 
         <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">
-          💗 Wyślij zapytanie
+          Wyslij zapytanie
         </button>
-
-
       </form>
     </div>
   </div>
 </section>
 
-
 <footer class="footer">
   <div class="footer-top">
     <div class="footer-brand">
-      <div class="logo"><span>Pink</span><strong>Heaven</strong></div>
-      <p>Salon beauty w Warszawie. Paznokcie, rzęsy, makijaż i zabiegi pielęgnacyjne.</p>
+      <div class="logo"><span>Salon Urody</span><strong>Róza</strong></div>
+      <p>Profesjonalny salon beauty w Warszawie. Manicure, rzesy, brwi, makijaz i zabiegi pielegnacyjne.</p>
       <div class="footer-social">
         <a href="#" class="social-link" aria-label="Instagram">📸</a>
         <a href="#" class="social-link" aria-label="Facebook">📘</a>
@@ -537,16 +645,17 @@
     </div>
     <div class="footer-col">
       <h5>Usługi</h5>
-      <a href="#services">Paznokcie</a>
-      <a href="#services">Rzęsy</a>
-      <a href="#services">Makijaż</a>
-      <a href="#services">Zabiegi Glow</a>
-      <a href="#services">Brwi &amp; Henna</a>
-      <a href="#services">Depilacja</a>
+      <a href="#services">Manicure hybrydowy</a>
+      <a href="#services">Pedicure</a>
+      <a href="#services">Stylizacja rzęs</a>
+      <a href="#services">Stylizacja brwi</a>
+      <a href="#services">Makijaz</a>
+      <a href="#services">Zabiegi na twarz</a>
     </div>
     <div class="footer-col">
       <h5>Informacje</h5>
       <a href="#about">O nas</a>
+      <a href="#pricing">Cennik</a>
       <a href="#testimonials">Opinie</a>
       <a href="#faq">FAQ</a>
       <a href="#contact">Kontakt</a>
@@ -554,40 +663,36 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© 2026 Pink Heaven Beauty - Strona demonstracyjna</p>
+    <p>&copy; 2026 Salon Urody Róza - Strona demonstracyjna</p>
     <a href="https://kontaktio.pl">Powered by <strong>Kontaktio</strong></a>
   </div>
 </footer>
 
-
 <div class="stickyBar" id="stickyBar" aria-hidden="true">
   <div class="stickyBar__content">
-    <b>Zainteresowany? Zobacz inne branże</b>
-    <span>Każda ma gotowego asystenta AI dopasowanego do klientów.</span>
-    <a class="stickyBtn" href="https://kontaktio.pl">← Powrót do Kontaktio</a>
+    <b>Zainteresowany? Zobacz inne branze</b>
+    <span>Kazda ma gotowego asystenta AI dopasowanego do klientow.</span>
+    <a class="stickyBtn" href="https://kontaktio.pl">Powrot do Kontaktio</a>
   </div>
-  <button class="stickyClose" id="stickyClose" type="button" aria-label="Zamknij">×</button>
+  <button class="stickyClose" id="stickyClose" type="button" aria-label="Zamknij">x</button>
 </div>
 
+<a href="#contact" class="mobile-cta-fixed" aria-label="Umów wizytę">Umów wizytę</a>
 
 <script
   src="https://cdn.jsdelivr.net/gh/kontaktio-demo/kontaktio@5d9beb0/kontaktio.js"
   data-kontaktio
-  data-client="PinkHeaven"
+  data-client="SalonUrodyRoza"
   data-backend="https://chatbot-backend-x2cy.onrender.com"
 ></script>
 
-
 <script>
-
 window.addEventListener("load", () => { document.body.classList.add("loaded"); });
-
 
 const navbar = document.getElementById("navbar");
 window.addEventListener("scroll", () => {
   navbar.classList.toggle("scrolled", window.scrollY > 40);
 }, { passive: true });
-
 
 const hamburger = document.getElementById("hamburger");
 const mobileNav = document.getElementById("mobileNav");
@@ -608,7 +713,6 @@ function closeMobile() {
   document.body.style.overflow = "";
 }
 
-
 const reveals = document.querySelectorAll(".reveal");
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(e => {
@@ -617,10 +721,8 @@ const revealObserver = new IntersectionObserver((entries) => {
       revealObserver.unobserve(e.target);
     }
   });
-  
 }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
 reveals.forEach(el => revealObserver.observe(el));
-
 
 function animateCounter(el, target, decimals) {
   const dur = 1800;
@@ -651,7 +753,6 @@ if (statNums.length) {
   statsObserver.observe(statNums[0].closest(".hero-stats"));
 }
 
-
 const slider  = document.getElementById("slider");
 const dots    = document.querySelectorAll(".slider-dot");
 const btnPrev = document.getElementById("sliderPrev");
@@ -673,7 +774,6 @@ btnPrev.addEventListener("click", () => { stopAuto(); goTo(cur - 1); startAuto()
 dots.forEach(d => d.addEventListener("click", () => { stopAuto(); goTo(+d.dataset.index); startAuto(); }));
 startAuto();
 
-
 document.querySelectorAll(".faq-question").forEach(btn => {
   btn.addEventListener("click", () => {
     const item = btn.closest(".faq-item");
@@ -685,7 +785,6 @@ document.querySelectorAll(".faq-question").forEach(btn => {
     if (!isOpen) { item.classList.add("open"); btn.setAttribute("aria-expanded", "true"); }
   });
 });
-
 
 (function() {
   const bar = document.getElementById("stickyBar");
@@ -703,14 +802,20 @@ document.querySelectorAll(".faq-question").forEach(btn => {
   upd();
 })();
 
-
 document.getElementById("contactForm").addEventListener("submit", e => {
   e.preventDefault();
   const btn = e.target.querySelector("button[type=submit]");
-  btn.textContent = "✓ Wysłano! Odezwiemy się wkrótce 💗";
+  btn.textContent = "Wyslano! Odezwiemy sie wkrotce";
   btn.disabled = true;
-  setTimeout(() => { btn.textContent = "💗 Wyślij zapytanie"; btn.disabled = false; e.target.reset(); }, 4000);
+  setTimeout(() => { btn.textContent = "Wyslij zapytanie"; btn.disabled = false; e.target.reset(); }, 4000);
 });
+
+window.addEventListener("scroll", () => {
+  const heroBg = document.getElementById("heroBg");
+  if (heroBg) {
+    heroBg.style.transform = "translateY(" + (window.scrollY * 0.3) + "px)";
+  }
+}, { passive: true });
 </script>
 
 </body>
