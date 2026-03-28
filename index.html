@@ -3,561 +3,796 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pink Heaven Beauty — Salon Piękna</title>
+  <title>Pink Heaven Beauty — Salon Piękna Warszawa</title>
 
-  <!-- Meta SEO -->
-  <meta name="description" content="Luksusowy salon beauty. Paznokcie, rzęsy, makijaż, zabiegi premium. Róż, blask i efekt WOW.">
-  <meta name="keywords" content="salon beauty, paznokcie, rzęsy, makijaż, różowy salon">
+  <!-- SEO -->
+  <meta name="description" content="Pink Heaven to luksusowy salon beauty w Warszawie. Paznokcie hybrydowe, rzęsy 1:1 i volume, makijaż, zabiegi glow. Rezerwacja online przez asystenta AI — dostępnego 24/7.">
+  <meta name="keywords" content="salon beauty, paznokcie, rzęsy, makijaż, glow, Warszawa, rezerwacja online, asystent AI">
   <meta name="author" content="Kontaktio">
+  <meta property="og:title" content="Pink Heaven Beauty — Salon Piękna Warszawa">
+  <meta property="og:description" content="Luksusowy salon beauty z asystentem AI. Umów wizytę o każdej porze.">
+  <meta property="og:type" content="website">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&family=Playfair+Display:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400;1,800&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
 
   <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,
-  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
-    <text y='.9em' font-size='90'>💗</text>
-  </svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💗</text></svg>">
 </head>
-
 <body>
 
 <!-- PRELOADER -->
 <div id="preloader">
   <div class="loader-heart"></div>
-  <span>Ładowanie piękna…</span>
+  <span>Ładowanie piękna&hellip;</span>
 </div>
 
 <!-- NAVBAR -->
-<header class="navbar">
-  <div class="logo">
-    <span>Pink</span><strong>Heaven</strong>
-  </div>
+<header class="navbar" id="navbar">
+  <div class="logo"><span>Pink</span><strong>Heaven</strong></div>
 
-  <nav>
-    <a href="#hero">Start</a>
+  <nav class="nav-links">
     <a href="#about">O nas</a>
+    <a href="#ai">Asystent AI</a>
     <a href="#services">Usługi</a>
     <a href="#gallery">Galeria</a>
     <a href="#testimonials">Opinie</a>
     <a href="#contact">Kontakt</a>
   </nav>
 
-  <a href="#contact" class="btn btn-primary">Umów wizytę</a>
+  <a href="#contact" class="btn btn-primary btn-sm nav-cta">Umów wizytę</a>
+
+  <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </header>
+
+<!-- MOBILE NAV -->
+<nav class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <a href="#about"        onclick="closeMobile()">O nas</a>
+  <a href="#ai"           onclick="closeMobile()">Asystent AI</a>
+  <a href="#services"     onclick="closeMobile()">Usługi</a>
+  <a href="#gallery"      onclick="closeMobile()">Galeria</a>
+  <a href="#testimonials" onclick="closeMobile()">Opinie</a>
+  <a href="#faq"          onclick="closeMobile()">FAQ</a>
+  <a href="#contact"      onclick="closeMobile()">Kontakt</a>
+  <a href="#contact" class="btn btn-primary" onclick="closeMobile()">Umów wizytę</a>
+</nav>
 
 <!-- HERO -->
 <section id="hero" class="hero">
   <div class="hero-bg"></div>
 
-  <div class="hero-content">
-    <h1>
-      <span>Twoje</span>
-      <strong>Piękno</strong>
-      <em>Zasługuje</em>
-      <span>Na Więcej</span>
-    </h1>
+  <div class="hero-deco" aria-hidden="true">
+    <span>💅</span><span>✨</span><span>💗</span><span>🌸</span>
+    <span>💋</span><span>✨</span><span>💗</span><span>🌸</span>
+  </div>
 
-    <p>
-      Najbardziej cukierkowy salon beauty w mieście.  
-      Rzęsy, paznokcie, glow, luksus i zero kompromisów.
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      Salon przyjmuje rezerwacje 24/7
+    </div>
+
+    <h1>Twoje Piękno<br>Zasługuje na<br><em>Więcej</em></h1>
+
+    <p class="hero-sub">
+      Najbardziej cukierkowy salon beauty w Warszawie. Rzęsy, paznokcie, glow, luksus i zero kompromisów — z asystentem AI dostępnym całą dobę.
     </p>
 
     <div class="hero-actions">
-      <a href="#services" class="btn btn-glow">Poznaj usługi</a>
-      <a href="#gallery" class="btn btn-outline">Zobacz efekty</a>
+      <a href="#contact" class="btn btn-white">💗 Umów wizytę</a>
+      <a href="#services" class="btn btn-outline">Poznaj usługi</a>
     </div>
   </div>
 
-  <div class="scroll-indicator">
-    <span></span>
+  <div class="hero-stats">
+    <div class="stat-item">
+      <span class="stat-num" data-target="1200">0</span>
+      <span class="stat-label">Zadowolonych klientek</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="8">0</span>
+      <span class="stat-label">Lat doświadczenia</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="18">0</span>
+      <span class="stat-label">Usług premium</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="4.9">0</span>
+      <span class="stat-label">Średnia ocena ⭐</span>
+    </div>
+  </div>
+
+  <div class="scroll-arrow" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 5v14M5 12l7 7 7-7"/>
+    </svg>
   </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="section about">
-  <div class="container grid-2">
-    <div class="about-text">
-      <h2>O nas</h2>
-      <p>
-        Pink Heaven to miejsce, gdzie estetyka spotyka perfekcję.
-        Nie robimy „jakoś”, robimy <strong>WOW</strong>.
+  <div class="about-grid container">
+    <div class="about-text reveal">
+      <span class="section-label">O nas</span>
+      <h2 class="section-title">Robimy <span>WOW</span>,<br>nie „jakoś"</h2>
+      <p class="section-sub" style="margin-bottom:32px">
+        Pink Heaven to miejsce, gdzie estetyka spotyka perfekcję. Każdy zabieg to rytuał, każda klientka to VIP. Zero pośpiechu, maksimum efektu — od 2016 roku.
       </p>
 
-      <p>
-        Każdy zabieg to rytuał. Każda klientka to VIP.
-        Zero pośpiechu, maksimum efektu.
-      </p>
-
-      <ul class="about-features">
-        <li>💗 Topowe stylistki</li>
-        <li>💗 Produkty premium</li>
-        <li>💗 Instagramowy efekt</li>
-        <li>💗 Komfort & luksus</li>
-      </ul>
+      <div class="about-features">
+        <div class="about-feature-item">
+          <span class="ico">💅</span>
+          <div><strong>Topowe stylistki</strong><span>Certyfikowane, z pasją do perfekcji</span></div>
+        </div>
+        <div class="about-feature-item">
+          <span class="ico">✨</span>
+          <div><strong>Produkty premium</strong><span>Tylko najwyżej oceniane marki</span></div>
+        </div>
+        <div class="about-feature-item">
+          <span class="ico">📸</span>
+          <div><strong>Efekt WOW</strong><span>Instagram eksploduje po wizycie</span></div>
+        </div>
+        <div class="about-feature-item">
+          <span class="ico">🌸</span>
+          <div><strong>Komfort &amp; luksus</strong><span>Atmosfera pełna różowych marzeń</span></div>
+        </div>
+      </div>
     </div>
 
-    <div class="about-visual">
-      <div class="pink-card"></div>
-      <div class="pink-card glow"></div>
+    <div class="about-visual reveal reveal-delay-2">
+      <div class="about-card about-card-1"></div>
+      <div class="about-card about-card-2"></div>
+      <div class="about-badge">
+        <span class="big">★ 4.9</span>
+        <div>
+          <strong>Ocena Google</strong>
+          <small>1 200+ opinii klientek</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AI SECTION -->
+<section id="ai" class="section ai-section">
+  <div class="ai-inner">
+    <div class="ai-text reveal">
+      <span class="section-label">Technologia AI</span>
+      <h2 class="section-title" style="color:#fff">Twój Asystent AI<br>— dostępny <span style="color:var(--pink-1)">24/7</span></h2>
+      <p class="section-sub">
+        Nie trać klientek przez brak odpowiedzi o 23:00. Nasz asystent AI umawia wizyty, odpowiada na pytania i wysyła przypomnienia — automatycznie, całą dobę.
+      </p>
+
+      <div class="ai-benefits">
+        <div class="ai-benefit reveal reveal-delay-1">
+          <span class="ai-ico">🤖</span>
+          <div>
+            <strong>Rezerwacje o każdej porze</strong>
+            <p>Asystent przyjmuje zapisy przez czat, SMS i Instagram nawet w środku nocy — żaden termin się nie zmarnuje.</p>
+          </div>
+        </div>
+        <div class="ai-benefit reveal reveal-delay-2">
+          <span class="ai-ico">💬</span>
+          <div>
+            <strong>Natychmiastowe odpowiedzi</strong>
+            <p>Pytania o cennik, dostępność i zabiegi — odpowiedź w ciągu 2 sekund, bez czekania na pracownika.</p>
+          </div>
+        </div>
+        <div class="ai-benefit reveal reveal-delay-3">
+          <span class="ai-ico">🔔</span>
+          <div>
+            <strong>Automatyczne przypomnienia</strong>
+            <p>Koniec z no-show. Asystent wysyła SMS i e-mail 24h i 2h przed wizytą, zwiększając frekwencję o 40%.</p>
+          </div>
+        </div>
+        <div class="ai-benefit reveal reveal-delay-4">
+          <span class="ai-ico">💗</span>
+          <div>
+            <strong>Spersonalizowane rekomendacje</strong>
+            <p>AI pamięta preferencje klientki i proponuje zabiegi idealnie dopasowane do jej potrzeb.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal reveal-delay-2">
+      <div class="chat-mock">
+        <div class="chat-mock-header">
+          <div class="chat-mock-avatar">💗</div>
+          <div class="chat-mock-info">
+            <strong>Pink Heaven Asystent</strong>
+            <span>Zawsze do dyspozycji</span>
+          </div>
+          <div class="online-dot"></div>
+        </div>
+        <div class="chat-mock-body">
+          <div class="chat-bubble bot">Cześć! 💗 Jestem asystentem Pink Heaven. W czym mogę Ci dzisiaj pomóc?</div>
+          <div class="chat-bubble user">Chciałabym umówić się na hybrydę 💅</div>
+          <div class="chat-bubble bot">
+            Świetnie! Mamy wolne terminy w tym tygodniu:<br><br>
+            📅 <strong>Czwartek 29.03</strong> — 14:00 lub 16:30<br>
+            📅 <strong>Piątek 30.03</strong> — 11:00 lub 15:00<br><br>
+            Który Ci odpowiada? ✨
+          </div>
+          <div class="chat-bubble user">Czwartek 16:30, poproszę!</div>
+          <div class="chat-bubble bot">Gotowe! Potwierdzenie wysyłam na SMS. Do zobaczenia w czwartek o 16:30 🌸</div>
+        </div>
+        <div class="chat-mock-input">
+          <span>Napisz wiadomość…</span>
+          <button aria-label="Wyślij">&#10148;</button>
+        </div>
+      </div>
+      <p style="text-align:center;margin-top:16px;font-size:0.78rem;opacity:0.65;color:#fff">
+        ↑ Kliknij ikonę 💗 w prawym dolnym rogu, aby porozmawiać z prawdziwym asystentem!
+      </p>
     </div>
   </div>
 </section>
 
 <!-- SERVICES -->
 <section id="services" class="section services">
-  <h2 class="section-title">Nasze Usługi</h2>
+  <div class="container text-center">
+    <span class="section-label reveal">Nasze Usługi</span>
+    <h2 class="section-title reveal">Co robimy <span>najlepiej?</span></h2>
+    <p class="section-sub reveal">Każdy zabieg wykonywany z najwyższą starannością, premium produktami i miłością do piękna.</p>
+  </div>
 
   <div class="services-grid">
-    <article class="service-card">
-      <div class="icon">💅</div>
+    <article class="service-card reveal">
+      <span class="service-icon">💅</span>
       <h3>Paznokcie</h3>
-      <p>Manicure hybrydowy, żelowy, zdobienia premium.</p>
+      <p>Manicure hybrydowy, żelowy i tytanowy. Zdobienia nail art, ombre i efekty 3D. Każdy projekt — unikalne dzieło.</p>
+      <span class="service-price">od 120 zł</span>
     </article>
 
-    <article class="service-card featured">
-      <div class="icon">👁️</div>
+    <article class="service-card featured reveal reveal-delay-1">
+      <span class="service-icon">👁️</span>
       <h3>Rzęsy</h3>
-      <p>1:1, 2-3D, mega volume, efekt WOW.</p>
+      <p>Przedłużanie 1:1, 2-3D i mega volume. Lifting &amp; laminacja. Efekt, który zostaje na 4–6 tygodni.</p>
+      <span class="service-price">od 180 zł</span>
     </article>
 
-    <article class="service-card">
-      <div class="icon">💄</div>
+    <article class="service-card reveal reveal-delay-2">
+      <span class="service-icon">💄</span>
       <h3>Makijaż</h3>
-      <p>Dzienny, wieczorowy, ślubny, glow.</p>
+      <p>Dzienny, wieczorowy, ślubny. Airbrush, smoky eye, glow — każdy styl na każdą okazję.</p>
+      <span class="service-price">od 200 zł</span>
     </article>
 
-    <article class="service-card">
-      <div class="icon">✨</div>
+    <article class="service-card reveal reveal-delay-3">
+      <span class="service-icon">✨</span>
       <h3>Zabiegi Glow</h3>
-      <p>Skin care, lifting, odżywianie.</p>
+      <p>Oczyszczanie, mikrodermabrazja, lifting, masaże twarzy. Twoja skóra jak filtr Instagram — bez filtra.</p>
+      <span class="service-price">od 150 zł</span>
     </article>
+
+    <article class="service-card reveal reveal-delay-4">
+      <span class="service-icon">🌿</span>
+      <h3>Brwi &amp; Henna</h3>
+      <p>Regulacja, henna pudrowa, microblading — idealne brwi definiują twarz i wzmacniają spojrzenie.</p>
+      <span class="service-price">od 80 zł</span>
+    </article>
+
+    <article class="service-card reveal reveal-delay-4">
+      <span class="service-icon">🧖‍♀️</span>
+      <h3>Depilacja</h3>
+      <p>Woskiem i cukrem, laserowa. Szybko, skutecznie, delikatnie. Dla całego ciała, przez cały rok.</p>
+      <span class="service-price">od 50 zł</span>
+    </article>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section how-it-works">
+  <div class="container text-center">
+    <span class="section-label reveal">Jak to działa?</span>
+    <h2 class="section-title reveal">Rezerwacja w <span>3 krokach</span></h2>
+    <p class="section-sub reveal">Umów wizytę przez asystenta AI w mniej niż 2 minuty — bez formularzy, bez czekania.</p>
+  </div>
+
+  <div class="steps-grid">
+    <div class="step-item reveal">
+      <div class="step-num">1</div>
+      <h3>Napisz do asystenta</h3>
+      <p>Kliknij ikonę 💗 w prawym dolnym rogu i powiedz, na co chcesz się umówić — asystent Cię poprowadzi.</p>
+    </div>
+    <div class="step-item reveal reveal-delay-1">
+      <div class="step-num">2</div>
+      <h3>Wybierz termin</h3>
+      <p>Asystent pokaże dostępne terminy dopasowane do Twojego grafiku. Wybierasz jednym kliknięciem.</p>
+    </div>
+    <div class="step-item reveal reveal-delay-2">
+      <div class="step-num">3</div>
+      <h3>Potwierdź wizytę</h3>
+      <p>Otrzymujesz SMS z potwierdzeniem i przypomnieniem. Przed wizytą — jeszcze jedno przypomnienie.</p>
+    </div>
+    <div class="step-item reveal reveal-delay-3">
+      <div class="step-num">4</div>
+      <h3>Ciesz się efektem</h3>
+      <p>Przychodź i oddaj się w ręce najlepszych stylistek. Efekt gwarantowany — powrót pewny. 💗</p>
+    </div>
   </div>
 </section>
 
 <!-- GALLERY -->
 <section id="gallery" class="section gallery">
-  <h2 class="section-title">Galeria Efektów</h2>
+  <div class="container text-center">
+    <span class="section-label reveal">Galeria</span>
+    <h2 class="section-title reveal">Nasze <span>Efekty</span></h2>
+    <p class="section-sub reveal">Zdjęcia mówią więcej niż słowa. Zobacz, co tworzymy każdego dnia.</p>
+  </div>
 
   <div class="gallery-grid">
-    <div class="gallery-item"></div>
-    <div class="gallery-item tall"></div>
-    <div class="gallery-item"></div>
-    <div class="gallery-item wide"></div>
-    <div class="gallery-item"></div>
-    <div class="gallery-item"></div>
+    <div class="gallery-item reveal" style="min-height:220px"><span class="gallery-label">Manicure Hybrydowy</span></div>
+    <div class="gallery-item tall reveal reveal-delay-1"><span class="gallery-label">Rzęsy Volume</span></div>
+    <div class="gallery-item reveal reveal-delay-2" style="min-height:220px"><span class="gallery-label">Zdobienia Nail Art</span></div>
+    <div class="gallery-item wide reveal reveal-delay-2" style="min-height:220px"><span class="gallery-label">Makijaż Ślubny</span></div>
+    <div class="gallery-item reveal reveal-delay-3" style="min-height:220px"><span class="gallery-label">Zabiegi Glow</span></div>
+    <div class="gallery-item reveal reveal-delay-4" style="min-height:220px"><span class="gallery-label">Brwi &amp; Henna</span></div>
   </div>
 </section>
 
 <!-- TESTIMONIALS -->
 <section id="testimonials" class="section testimonials">
-  <h2 class="section-title">Opinie Klientek</h2>
+  <div class="container text-center">
+    <span class="section-label reveal">Opinie</span>
+    <h2 class="section-title reveal">Co mówią nasze <span>klientki?</span></h2>
+    <p class="section-sub reveal">Ponad 1 200 opinii na Google. Każda z gwiazdką — bo na to zasługujemy.</p>
+  </div>
 
-  <div class="testimonials-slider">
-    <div class="testimonial">
-      <p>„Najlepszy salon ever, efekt PETARDA 😍”</p>
-      <span>— Kasia</span>
+  <div class="testimonials-inner reveal">
+    <div class="testimonials-track">
+      <div class="testimonials-slider" id="slider">
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">„Najlepszy salon ever, efekt PETARDA 😍 Rzęsy trzymają się już 6 tygodni i wyglądają jak pierwszego dnia. Asystent AI urzekł mnie — umówiłam się o 23:00!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar a1">👩</div>
+            <div class="author-info">
+              <strong>Kasia W.</strong>
+              <span>Klientka od 3 lat</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">„Czułam się jak księżniczka od pierwszej chwili. Paznokcie przepiękne, obsługa cudowna, atmosfera bajkowa. Wracam na pewno i zabieram ze sobą całą koleżankę! 🌸"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar a2">👩‍🦰</div>
+            <div class="author-info">
+              <strong>Natalia K.</strong>
+              <span>Klientka od 2 lat</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">„Instagram eksplodował po tej wizycie 💗 Zdjęcia paznokci miały 800 polubień! Ale najważniejsze — asystent AI odpowiedział mi w sekundę i od razu zaproponował wolny termin."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar a3">👩‍🦱</div>
+            <div class="author-info">
+              <strong>Ola M.</strong>
+              <span>Influencerka &amp; stała klientka</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">„Zabieg glow face to mistrzostwo! Skóra jak u 18-latki, a mam lat 35 😂 Zero bólu, maksimum efektu. Przypomnienie SMS dzień wcześniej — profesjonalizm na 5+."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar a4">👩‍🦳</div>
+            <div class="author-info">
+              <strong>Agnieszka B.</strong>
+              <span>Klientka od roku</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
 
-    <div class="testimonial">
-      <p>„Czułam się jak księżniczka, wracam na pewno.”</p>
-      <span>— Natalia</span>
+    <div class="slider-dots" id="sliderDots">
+      <button class="slider-dot active" data-index="0" aria-label="Opinia 1"></button>
+      <button class="slider-dot" data-index="1" aria-label="Opinia 2"></button>
+      <button class="slider-dot" data-index="2" aria-label="Opinia 3"></button>
+      <button class="slider-dot" data-index="3" aria-label="Opinia 4"></button>
     </div>
 
-    <div class="testimonial">
-      <p>„Instagram eksplodował po tej wizycie 💗”</p>
-      <span>— Ola</span>
+    <div class="slider-nav">
+      <button class="slider-btn" id="sliderPrev" aria-label="Poprzednia">&#8592;</button>
+      <button class="slider-btn" id="sliderNext" aria-label="Następna">&#8594;</button>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
-<section class="cta">
-  <h2>Zarezerwuj swój termin</h2>
-  <p>Bo piękno nie czeka, a terminy uciekają 😏</p>
-  <a href="#contact" class="btn btn-glow">Umów wizytę</a>
+<!-- FAQ -->
+<section id="faq" class="section faq">
+  <div class="container text-center">
+    <span class="section-label reveal">FAQ</span>
+    <h2 class="section-title reveal">Masz <span>pytania?</span></h2>
+    <p class="section-sub reveal">Zebraliśmy najczęściej zadawane pytania. Reszty odpowie asystent AI 💗</p>
+  </div>
+
+  <div class="faq-list">
+    <div class="faq-item reveal">
+      <button class="faq-question" aria-expanded="false">
+        Jak umówić wizytę przez asystenta AI?
+        <span class="faq-arrow">▼</span>
+      </button>
+      <div class="faq-answer">
+        <p>Kliknij ikonę 💗 w prawym dolnym rogu strony. Napisz, na co chcesz się umówić — asystent zaproponuje wolne terminy i potwierdzi rezerwację w kilka sekund. Otrzymasz SMS z potwierdzeniem i przypomnienie przed wizytą.</p>
+      </div>
+    </div>
+
+    <div class="faq-item reveal reveal-delay-1">
+      <button class="faq-question" aria-expanded="false">
+        Jak długo trzymają się rzęsy?
+        <span class="faq-arrow">▼</span>
+      </button>
+      <div class="faq-answer">
+        <p>Przy dobrym pielęgnowaniu rzęsy trzymają się 4–6 tygodni. Zalecamy uzupełnienie po 3–4 tygodniach, aby efekt był zawsze perfekcyjny. Asystent AI przypomni Ci, kiedy pora na uzupełnienie! 💗</p>
+      </div>
+    </div>
+
+    <div class="faq-item reveal reveal-delay-2">
+      <button class="faq-question" aria-expanded="false">
+        Ile kosztuje manicure hybrydowy?
+        <span class="faq-arrow">▼</span>
+      </button>
+      <div class="faq-answer">
+        <p>Manicure hybrydowy zaczyna się od 120 zł. Zdobienia, wzorki i efekty specjalne są wyceniane indywidualnie. Pełny cennik znajdziesz w sekcji Usługi lub zapytaj asystenta AI — odpowie natychmiast.</p>
+      </div>
+    </div>
+
+    <div class="faq-item reveal reveal-delay-3">
+      <button class="faq-question" aria-expanded="false">
+        Czy mogę odwołać lub przełożyć wizytę?
+        <span class="faq-arrow">▼</span>
+      </button>
+      <div class="faq-answer">
+        <p>Oczywiście! Wizytę możesz odwołać lub przełożyć przez asystenta AI do 24 godzin przed terminem. Napisz do nas przez czat lub zadzwoń — zawsze znajdziemy rozwiązanie.</p>
+      </div>
+    </div>
+
+    <div class="faq-item reveal reveal-delay-4">
+      <button class="faq-question" aria-expanded="false">
+        Jakie produkty stosujecie?
+        <span class="faq-arrow">▼</span>
+      </button>
+      <div class="faq-answer">
+        <p>Pracujemy wyłącznie z produktami premium: Kodi Professional, NeoNail, Lash Lift &amp; Tint, Dermalogica i innych certyfikowanych marek. Bezpieczeństwo i jakość to nasz priorytet — bez kompromisów.</p>
+      </div>
+    </div>
+
+    <div class="faq-item reveal reveal-delay-4">
+      <button class="faq-question" aria-expanded="false">
+        Czy oferujecie zabiegi dla par lub grup?
+        <span class="faq-arrow">▼</span>
+      </button>
+      <div class="faq-answer">
+        <p>Tak! Oferujemy pakiety dla par, wieczory panieńskie i grupowe eventy beauty. Skontaktuj się z nami przez asystenta AI lub formularz — przygotujemy wyjątkową ofertę dopasowaną do Twoich potrzeb.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <h2>Gotowa na efekt <em>WOW</em>?</h2>
+  <p>Terminy znikają jak cukierki �� Zarezerwuj swoje miejsce teraz — asystent AI zajmie się resztą.</p>
+  <div class="cta-actions">
+    <a href="#contact" class="btn btn-white">💗 Umów wizytę online</a>
+    <a href="tel:+48000000000" class="btn btn-outline">📞 Zadzwoń do nas</a>
+  </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="section contact">
-  <div class="container grid-2">
-    <div class="contact-info">
-      <h2>Kontakt</h2>
-      <p>📍 Warszawa</p>
-      <p>📞 +48 000 000 000</p>
-      <p>📧 hello@pinkheaven.pl</p>
+  <div class="contact-grid container">
+    <div class="contact-info reveal">
+      <span class="section-label">Kontakt</span>
+      <h2>Odwiedź nas<br>lub napisz!</h2>
+
+      <div style="margin-top:28px">
+        <div class="contact-detail">
+          <div class="ico-wrap">📍</div>
+          <div>
+            <strong>Adres</strong>
+            <p>ul. Różana 12, 00-001 Warszawa<br>(Śródmieście, obok metra Centrum)</p>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="ico-wrap">📞</div>
+          <div>
+            <strong>Telefon</strong>
+            <p><a href="tel:+48000000000" style="color:var(--pink-4);font-weight:600">+48 000 000 000</a></p>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="ico-wrap">📧</div>
+          <div>
+            <strong>E-mail</strong>
+            <p><a href="mailto:hello@pinkheaven.pl" style="color:var(--pink-4);font-weight:600">hello@pinkheaven.pl</a></p>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="ico-wrap">📱</div>
+          <div>
+            <strong>Instagram</strong>
+            <p><a href="#" style="color:var(--pink-4);font-weight:600">@pinkheaven.beauty</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="opening-hours">
+        <h4>🕐 Godziny otwarcia</h4>
+        <div class="hours-row"><strong>Pon–Pt</strong><span class="open">09:00–20:00 ✓</span></div>
+        <div class="hours-row"><strong>Sobota</strong><span class="open">10:00–18:00 ✓</span></div>
+        <div class="hours-row"><strong>Niedziela</strong><span class="closed">Zamknięte</span></div>
+        <div class="hours-row" style="border:none;margin-top:8px;font-size:0.78rem;opacity:0.7"><em>💗 Asystent AI przyjmuje rezerwacje 24/7</em></div>
+      </div>
     </div>
 
-    <form class="contact-form">
-      <input type="text" placeholder="Imię">
-      <input type="email" placeholder="Email">
-      <textarea placeholder="Wiadomość"></textarea>
-      <button type="submit" class="btn btn-primary">Wyślij</button>
-    </form>
+    <div class="contact-form reveal reveal-delay-2">
+      <span class="section-label">Formularz</span>
+      <h3 style="font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--text);margin-bottom:28px">Umów wizytę online</h3>
+
+      <form id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">Imię</label>
+            <input type="text" id="fname" name="fname" placeholder="Twoje imię" required autocomplete="given-name">
+          </div>
+          <div class="form-group">
+            <label for="phone">Telefon</label>
+            <input type="tel" id="phone" name="phone" placeholder="+48 000 000 000" autocomplete="tel">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="twoj@email.pl" required autocomplete="email">
+        </div>
+
+        <div class="form-group">
+          <label for="service">Usługa</label>
+          <select id="service" name="service">
+            <option value="">— Wybierz usługę —</option>
+            <option>Manicure hybrydowy</option>
+            <option>Manicure żelowy / tytanowy</option>
+            <option>Przedłużanie rzęs 1:1</option>
+            <option>Przedłużanie rzęs 2-3D Volume</option>
+            <option>Lifting &amp; laminacja rzęs</option>
+            <option>Makijaż okolicznościowy</option>
+            <option>Makijaż ślubny</option>
+            <option>Zabiegi glow</option>
+            <option>Brwi &amp; henna</option>
+            <option>Depilacja</option>
+            <option>Inna / zapytanie</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Wiadomość</label>
+          <textarea id="message" name="message" placeholder="Preferowany termin, pytania, uwagi…"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">
+          💗 Wyślij zapytanie
+        </button>
+
+        <p style="font-size:0.75rem;color:var(--text-light);margin-top:12px;text-align:center">
+          Lub umów się natychmiast przez <strong style="color:var(--pink-4)">asystenta AI</strong> — ikona 💗 w prawym dolnym rogu.
+        </p>
+      </form>
+    </div>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
-  <p>
-    © 2026 Pink Heaven Beauty  
-    <br>
-    Strona demonstracyjna — Kontaktio 2026
-  </p>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="logo"><span>Pink</span><strong>Heaven</strong></div>
+      <p>Luksusowy salon beauty w Warszawie. Paznokcie, rzęsy, makijaż i zabiegi premium — z asystentem AI dostępnym całą dobę.</p>
+      <div class="footer-social">
+        <a href="#" class="social-link" aria-label="Instagram">📸</a>
+        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+        <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+        <a href="#" class="social-link" aria-label="WhatsApp">💬</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Usługi</h5>
+      <a href="#services">Paznokcie</a>
+      <a href="#services">Rzęsy</a>
+      <a href="#services">Makijaż</a>
+      <a href="#services">Zabiegi Glow</a>
+      <a href="#services">Brwi &amp; Henna</a>
+      <a href="#services">Depilacja</a>
+    </div>
+    <div class="footer-col">
+      <h5>Informacje</h5>
+      <a href="#about">O nas</a>
+      <a href="#ai">Asystent AI</a>
+      <a href="#testimonials">Opinie</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Kontakt</a>
+      <a href="https://kontaktio.pl">Powered by Kontaktio</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Pink Heaven Beauty — Strona demonstracyjna</p>
+    <a href="https://kontaktio.pl">Asystent AI: <strong>Kontaktio</strong></a>
+  </div>
 </footer>
 
-<!-- SCRIPTS -->
-<script>
-  // preloader
-  window.addEventListener("load", () => {
-    document.body.classList.add("loaded");
-  });
-</script>
-<style>
-/* =========================================================
-   KONTAKTIO – PINK HEAVEN WOW SKIN
-   Candy / Pink / Luxury / Premium Glass
-   ========================================================= */
+<!-- STICKY CTA BAR -->
+<div class="stickyBar" id="stickyBar" aria-hidden="true">
+  <div class="stickyBar__content">
+    <b>Zainteresowany? Zobacz inne branże</b>
+    <span>Każda ma gotowego asystenta AI dopasowanego do klientów.</span>
+    <a class="stickyBtn" href="https://kontaktio.pl">← Powrót do Kontaktio</a>
+  </div>
+  <button class="stickyClose" id="stickyClose" type="button" aria-label="Zamknij">×</button>
+</div>
 
-:root {
-  --k-accent: #ff69b4;      /* hot pink */
-  --k-accent2: #ffc0cb;     /* light pink */
-  --k-glass: rgba(255, 182, 193, 0.22);
-  --k-glass-soft: rgba(255, 192, 203, 0.12);
-  --k-border: rgba(255, 255, 255, 0.18);
-  --k-text: rgba(255, 255, 255, 0.96);
-  --k-muted: rgba(255, 255, 255, 0.72);
-}
-
-/* ===============================
-   LAUNCHER (Floating Button)
-=============================== */
-.kontaktio-launcher {
-  width: 64px !important;
-  height: 64px !important;
-  border-radius: 999px !important;
-  background:
-    radial-gradient(circle at 30% 30%, var(--k-accent), var(--k-accent2)) !important;
-  border: 1px solid rgba(255,255,255,.22) !important;
-  box-shadow:
-    0 22px 70px rgba(255,105,180,.45),
-    0 0 0 14px rgba(255,192,203,.22),
-    0 0 0 30px rgba(255,182,193,.12) !important;
-  position: fixed !important;
-  bottom: 28px !important;
-  right: 28px !important;
-  z-index: 999999 !important;
-  overflow: hidden;
-  cursor: pointer;
-  transition: transform .25s ease;
-}
-
-.kontaktio-launcher:hover {
-  transform: translateY(-4px) scale(1.05);
-}
-
-.kontaktio-launcher::before {
-  content: "";
-  position: absolute;
-  inset: -45%;
-  background:
-    radial-gradient(60% 60% at 30% 30%, rgba(255,255,255,.45), transparent 60%),
-    radial-gradient(60% 60% at 70% 70%, rgba(255,255,255,.18), transparent 62%);
-  filter: blur(8px);
-  animation: kontaktioAurora 6.5s ease-in-out infinite;
-}
-
-.kontaktio-launcher::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 999px;
-  background:
-    linear-gradient(135deg, rgba(255,255,255,.25), transparent 60%);
-  opacity: .35;
-}
-
-.kontaktio-launcher > div {
-  position: relative;
-  z-index: 2;
-  font-size: 26px;
-  font-weight: 900;
-  color: #fff0f5;
-}
-
-/* ===============================
-   WIDGET CONTAINER
-=============================== */
-.kontaktio-widget {
-  border-radius: 24px !important;
-  border: 1px solid var(--k-border) !important;
-  background: var(--k-glass) !important;
-  backdrop-filter: blur(30px) saturate(180%) !important;
-  -webkit-backdrop-filter: blur(30px) saturate(180%) !important;
-  box-shadow:
-    0 32px 110px rgba(255,105,180,.35),
-    0 1px 0 rgba(255,255,255,.08) inset !important;
-  position: fixed !important;
-  bottom: 110px !important;
-  right: 28px !important;
-  z-index: 999999 !important;
-  overflow: hidden;
-}
-
-.kontaktio-widget::before {
-  content: "";
-  position: absolute;
-  inset: -60px;
-  background:
-    radial-gradient(700px 480px at 20% 10%, rgba(255,182,193,.28), transparent 60%),
-    radial-gradient(620px 520px at 90% 0%, rgba(255,105,180,.24), transparent 58%),
-    radial-gradient(680px 560px at 30% 110%, rgba(255,192,203,.18), transparent 55%);
-  filter: blur(28px);
-  pointer-events: none;
-  animation: kontaktioAurora 9s ease-in-out infinite;
-}
-
-/* ===============================
-   HEADER
-=============================== */
-.kontaktio-header {
-  background:
-    linear-gradient(180deg, rgba(255,192,203,.65), rgba(255,182,193,.25)) !important;
-  color: var(--k-text) !important;
-  border-bottom: 1px solid rgba(255,255,255,.12);
-}
-
-.kontaktio-header-sub {
-  color: var(--k-muted) !important;
-}
-
-/* ===============================
-   CHAT BUBBLES
-=============================== */
-.kontaktio-bubble {
-  border-radius: 18px !important;
-  font-size: 14.5px !important;
-  line-height: 1.5 !important;
-  box-shadow:
-    0 18px 50px rgba(255,105,180,.22),
-    0 1px 0 rgba(255,255,255,.06) inset !important;
-}
-
-.kontaktio-row.bot .kontaktio-bubble {
-  background: rgba(255,255,255,.08) !important;
-  color: var(--k-text) !important;
-  border: 1px solid rgba(255,255,255,.14);
-}
-
-.kontaktio-row.user .kontaktio-bubble {
-  background:
-    linear-gradient(135deg, var(--k-accent), var(--k-accent2)) !important;
-  color: #fff0f5 !important;
-  font-weight: 700;
-}
-
-/* ===============================
-   INPUT AREA
-=============================== */
-.kontaktio-inputwrap {
-  background:
-    linear-gradient(180deg, rgba(255,182,193,.18), rgba(255,182,193,.38)) !important;
-  border-top: 1px solid rgba(255,255,255,.12);
-}
-
-.kontaktio-input {
-  background: rgba(255,255,255,.12) !important;
-  color: var(--k-text) !important;
-  border: 1px solid rgba(255,255,255,.18) !important;
-}
-
-.kontaktio-input::placeholder {
-  color: rgba(255,255,255,.55);
-}
-
-.kontaktio-send {
-  background:
-    linear-gradient(135deg, var(--k-accent), var(--k-accent2)) !important;
-  color: #fff0f5 !important;
-  border: 1px solid rgba(255,255,255,.22);
-  font-weight: 800;
-  box-shadow: 0 12px 40px rgba(255,105,180,.35);
-}
-
-/* ===============================
-   AURORA ANIMATION
-=============================== */
-@keyframes kontaktioAurora {
-  0%   { transform: translate(0,0) scale(1); }
-  50%  { transform: translate(14px,-12px) scale(1.05); }
-  100% { transform: translate(0,0) scale(1); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .kontaktio-widget::before,
-  .kontaktio-launcher::before {
-    animation: none !important;
-  }
-}
-</style>
-  <script
+<!-- KONTAKTIO AI WIDGET -->
+<script
   src="https://cdn.jsdelivr.net/gh/kontaktio-demo/kontaktio@5d9beb0/kontaktio.js"
   data-kontaktio
   data-client="PinkHeaven"
   data-backend="https://chatbot-backend-x2cy.onrender.com"
 ></script>
-  <!-- Sticky CTA (centered) -->
-<div class="stickyBar" id="stickyBar" aria-hidden="true">
-  <div class="stickyBar__content">
-    <b>Zainteresowany? Zobacz inne branże</b>
-    <span>Każda ma gotowego asystenta AI dopasowanego do klientów.</span>
-    <a class="stickyBtn" href="https://kontaktio.pl">← Powrót</a>
-  </div>
-  <button class="stickyClose" id="stickyClose" type="button" aria-label="Zamknij">×</button>
-</div>
-<style>
 
-/* Sticky CTA bar — improved contrast */
-.stickyBar{
-  position: fixed;
-  left: 16px;
-  right: 16px;
-  bottom: 16px;
-  z-index: 50;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-  border-radius: 24px;
-  background: rgba(0,0,0,.55); /* mocniejszy kontrast */
-  border: 1px solid rgba(255,255,255,.12);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-  box-shadow: 0 20px 80px rgba(0,0,0,.55);
-  transform: translateY(24px);
-  opacity: 0;
-  transition: transform .6s var(--ease), opacity .6s var(--ease);
-  pointer-events: none;
+<!-- PAGE SCRIPTS -->
+<script>
+/* Preloader */
+window.addEventListener("load", () => { document.body.classList.add("loaded"); });
+
+/* Navbar scroll */
+const navbar = document.getElementById("navbar");
+window.addEventListener("scroll", () => {
+  navbar.classList.toggle("scrolled", window.scrollY > 40);
+}, { passive: true });
+
+/* Hamburger / mobile nav */
+const hamburger = document.getElementById("hamburger");
+const mobileNav = document.getElementById("mobileNav");
+
+hamburger.addEventListener("click", () => {
+  const isOpen = mobileNav.classList.toggle("open");
+  hamburger.classList.toggle("active", isOpen);
+  hamburger.setAttribute("aria-expanded", isOpen);
+  mobileNav.setAttribute("aria-hidden", !isOpen);
+  document.body.style.overflow = isOpen ? "hidden" : "";
+});
+
+function closeMobile() {
+  mobileNav.classList.remove("open");
+  hamburger.classList.remove("active");
+  hamburger.setAttribute("aria-expanded", "false");
+  mobileNav.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
 }
 
-.stickyBar.on{
-  transform: translateY(0);
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.stickyBar__content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 10px;
-}
-
-.stickyBar__content b{
-  font-size: 13px;
-  font-weight: 900;
-  color: #ffffff; /* pełna biel */
-  text-shadow: 0 1px 2px rgba(0,0,0,.6); /* premium glow */
-}
-
-.stickyBar__content span{
-  font-size: 12px;
-  color: #e6e6e6; /* jasny szary */
-  text-shadow: 0 1px 2px rgba(0,0,0,.5);
-}
-
-.stickyBtn{
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 38px;
-  padding: 0 16px;
-  border-radius: 999px;
-  border: 1px solid rgba(255,255,255,.14);
-  background: linear-gradient(135deg, #10b981, #22c55e);
-  color: #0b0b0d;
-  font-weight: 900;
-  font-size: 12px;
-  text-decoration: none;
-  box-shadow: 0 14px 40px rgba(16,185,129,.35);
-}
-
-.stickyBtn:hover{
-  box-shadow: 0 20px 60px rgba(16,185,129,.55);
-}
-
-.stickyClose{
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 34px;
-  height: 34px;
-  border-radius: 999px;
-  border: 1px solid rgba(255,255,255,.14);
-  background: rgba(255,255,255,.08);
-  color: #ffffff;
-  font-weight: 900;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-</style>
-
- <script>
-(function stickyBar(){
-  const bar = document.getElementById("stickyBar");
-  const close = document.getElementById("stickyClose");
-  if (!bar || !close) return;
-
-  const key = "kontaktio_sticky_closed";
-  const closed = (() => {
-    try { return localStorage.getItem(key) === "1"; } catch { return false; }
-  })();
-  if (closed) return;
-
-  let lastState = false;
-  let ticking = false;
-
-  function updateBar(){
-    const y = window.scrollY || 0;
-    const shouldShow = y > 900;
-
-    if (shouldShow !== lastState) {
-      if (shouldShow) {
-        bar.classList.add("on");
-      } else {
-        bar.classList.remove("on");
-      }
-      lastState = shouldShow;
+/* Scroll reveal */
+const reveals = document.querySelectorAll(".reveal");
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add("visible");
+      revealObserver.unobserve(e.target);
     }
-
-    ticking = false;
-  }
-
-  function onScroll(){
-    if (!ticking) {
-      window.requestAnimationFrame(updateBar);
-      ticking = true;
-    }
-  }
-
-  window.addEventListener("scroll", onScroll, { passive: true });
-  updateBar();
-
-  close.addEventListener("click", () => {
-    bar.classList.remove("on");
-    try { localStorage.setItem(key, "1"); } catch {}
   });
+  /* threshold: element must be 12% visible; rootMargin shrinks trigger zone 40px from bottom
+     so animations fire just before the element fully enters the viewport */
+}, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+reveals.forEach(el => revealObserver.observe(el));
+
+/* Counter animation */
+function animateCounter(el, target, decimals) {
+  const dur = 1800;
+  const start = performance.now();
+  (function step(now) {
+    const p = Math.min((now - start) / dur, 1);
+    const eased = 1 - Math.pow(1 - p, 3);
+    const val = target * eased;
+    el.textContent = decimals ? val.toFixed(1) : Math.floor(val).toLocaleString("pl-PL");
+    if (p < 1) requestAnimationFrame(step);
+    else el.textContent = decimals ? target.toFixed(1) : Number(target).toLocaleString("pl-PL");
+  })(start);
+}
+
+const statNums = document.querySelectorAll(".stat-num[data-target]");
+let statsAnimated = false;
+if (statNums.length) {
+  const statsObserver = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting && !statsAnimated) {
+      statsAnimated = true;
+      statNums.forEach(el => {
+        const t = parseFloat(el.dataset.target);
+        animateCounter(el, t, el.dataset.target.includes(".") ? 1 : 0);
+      });
+      statsObserver.disconnect();
+    }
+  }, { threshold: 0.5 });
+  statsObserver.observe(statNums[0].closest(".hero-stats"));
+}
+
+/* Testimonials slider */
+const slider  = document.getElementById("slider");
+const dots    = document.querySelectorAll(".slider-dot");
+const btnPrev = document.getElementById("sliderPrev");
+const btnNext = document.getElementById("sliderNext");
+let cur = 0, autoSlide;
+
+function goTo(i) {
+  const cards = slider.querySelectorAll(".testimonial-card");
+  cur = (i + cards.length) % cards.length;
+  slider.style.transform = "translateX(-" + (cur * 100) + "%)";
+  dots.forEach((d, j) => d.classList.toggle("active", j === cur));
+}
+
+function startAuto() { autoSlide = setInterval(() => goTo(cur + 1), 5000); }
+function stopAuto()  { clearInterval(autoSlide); }
+
+btnNext.addEventListener("click", () => { stopAuto(); goTo(cur + 1); startAuto(); });
+btnPrev.addEventListener("click", () => { stopAuto(); goTo(cur - 1); startAuto(); });
+dots.forEach(d => d.addEventListener("click", () => { stopAuto(); goTo(+d.dataset.index); startAuto(); }));
+startAuto();
+
+/* FAQ accordion */
+document.querySelectorAll(".faq-question").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const item = btn.closest(".faq-item");
+    const isOpen = item.classList.contains("open");
+    document.querySelectorAll(".faq-item.open").forEach(open => {
+      open.classList.remove("open");
+      open.querySelector(".faq-question").setAttribute("aria-expanded", "false");
+    });
+    if (!isOpen) { item.classList.add("open"); btn.setAttribute("aria-expanded", "true"); }
+  });
+});
+
+/* Sticky bar */
+(function() {
+  const bar = document.getElementById("stickyBar");
+  const cls = document.getElementById("stickyClose");
+  if (!bar || !cls) return;
+  try { if (localStorage.getItem("kontaktio_sticky_closed") === "1") return; } catch {}
+  let last = false, tick = false;
+  function upd() {
+    const show = window.scrollY > 900;
+    if (show !== last) { bar.classList.toggle("on", show); bar.setAttribute("aria-hidden", !show); last = show; }
+    tick = false;
+  }
+  window.addEventListener("scroll", () => { if (!tick) { requestAnimationFrame(upd); tick = true; } }, { passive: true });
+  cls.addEventListener("click", () => { bar.classList.remove("on"); try { localStorage.setItem("kontaktio_sticky_closed","1"); } catch {} });
+  upd();
 })();
+
+/* Contact form (demo) */
+document.getElementById("contactForm").addEventListener("submit", e => {
+  e.preventDefault();
+  const btn = e.target.querySelector("button[type=submit]");
+  btn.textContent = "✓ Wysłano! Odezwiemy się wkrótce 💗";
+  btn.disabled = true;
+  setTimeout(() => { btn.textContent = "💗 Wyślij zapytanie"; btn.disabled = false; e.target.reset(); }, 4000);
+});
 </script>
 
 </body>
 </html>
-
