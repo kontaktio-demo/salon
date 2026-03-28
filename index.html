@@ -510,7 +510,7 @@
           <div class="ico-wrap">📍</div>
           <div>
             <strong>Adres</strong>
-            <p>ul. Różana 12, 00-000 Warszawa<br>(Śródmieście, obok metra Centrum)</p>
+            <p>ul. Różana 12, 00-001 Warszawa<br>(Śródmieście, obok metra Centrum)</p>
           </div>
         </div>
         <div class="contact-detail">
@@ -697,6 +697,8 @@ const revealObserver = new IntersectionObserver((entries) => {
       revealObserver.unobserve(e.target);
     }
   });
+  /* threshold: element must be 12% visible; rootMargin shrinks trigger zone 40px from bottom
+     so animations fire just before the element fully enters the viewport */
 }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
 reveals.forEach(el => revealObserver.observe(el));
 
